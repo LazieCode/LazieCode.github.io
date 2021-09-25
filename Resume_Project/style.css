@@ -1,0 +1,451 @@
+*{  /*The star selector targets every element of
+	page.*/
+	margin:0px;
+	padding: 0px;
+}
+
+#body-header{
+	height: 100vh;
+	width:100%;
+	opacity: 0.95;
+	background-image: url("Images/845248.png");
+	background-attachment: fixed;
+	background-size: auto; /*If the image is large in size 
+	and not fitting in the browser page we can use this.*/
+	background-repeat: no-repeat;
+}
+
+.center-text{
+	text-align: center;
+}
+
+
+#nav{
+	overflow: hidden;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	background-color: black;
+	z-index: 100; /*To place them above the image*/
+	box-sizing: border-box;
+}
+
+#nav li a{
+	color: white;
+	font-size: 25px;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.overlay{
+	display: inline-block;
+	padding: 30px 30px;
+	margin-left: 8px;	
+}
+
+.overlay:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+
+ #nav .overlay li{
+	list-style: none;
+}
+
+/*#nav li a:hover{
+	color: red;
+	
+	transition: color 0.7s; Transition can be used to delay the appearance
+	 of the color to make it visually more appealing
+}*/
+
+#name{
+	
+	padding: 350px 0px 80px;
+	color: white;
+	font-size: 80px;
+	margin-bottom: 0.5rem;
+}
+
+#Social li {
+	list-style: none;
+	display: inline-block;
+	margin: 10px 30px;
+
+}
+
+#Social li a{
+	color: white;
+	font-size: 20px;
+	padding: 10px
+}
+
+#Social li a:hover{
+	border-radius: 50%;
+	box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.6);
+
+	/*Box shadow take some arguments these are:
+	
+	horizontal offset: +ve value so shadow on right
+	and -ve for left shadow.
+	
+	Vertical offset: +ve value for bottom shadow
+	and -ve for top.
+
+	Blur: If we want our shadow to be blurry by some pixels
+
+	spread: How far we want our image to spread.
+
+	color: color;*/
+}
+
+#about{
+
+	padding: 50px 200px;
+   	/*background-color: #f3f6f9;*/
+    /*text-align: justify;*/
+    margin: auto;
+}
+
+#about h1{
+	/*margin: 50px 0px;*/
+	padding: 50px 0px;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 45px;
+	color: #352b94;
+}
+
+#about img{
+	/*margin-top: 50px;*/
+	border-radius: 50%;
+	height: 325px;
+	width: 325px;
+}
+
+#about p{
+	padding: 50px 0px 100px 0px; 
+	font-family: sans-serif; 
+	color: black;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 50px;
+
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 0px;
+}
+
+#skills{
+	background-color: #f3f6f9;
+	
+}
+
+#skills h2{
+	padding-bottom:100px;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 45px;
+	color: #352b94;
+}
+
+#skill{
+	height: auto;
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 231px; 
+	/*justify-content: space-around;*/
+}
+
+#skill div{
+	height: 20px;
+	width: 180px;
+	border: 2px solid black;
+	box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.4);
+	border-radius: 20px;
+	background-color:lightgrey;
+	color: white;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 21px;
+	padding: 10px 0px 10px 20px;
+	margin: 0px 60px 40px 60px;
+	
+}
+
+/*Notes:
+If some content is overflowing out of the 
+parents then we can use the overflow-wrap
+attribute with value as break-word. This
+will adjust the word in the div.
+*/
+
+/*Work Exerience*/
+
+#experience h2, #education h2{
+
+	padding-bottom:100px;
+	font-family: sans-serif;
+	font-weight: 530;
+	font-size: 45px;
+	color: #352b94;
+
+}
+
+.timeline{
+	/*border: 2px black solid;*/
+	width: 4px;
+	width: 75%;
+	position: relative;
+
+}
+
+#timeline-box:nth-child(2n){
+
+	/*nth-child is another psuedo class which is very
+	very useful. Whenver we want to apply something
+	which is same for alternate things then we can 
+	use this psuedo class.
+	Inside the () 2n denotes all even and 2n+1 odd.*/
+	left:55%;
+	text-align: left;
+}
+
+#timeline-box{
+	/*border: 2px black solid;*/
+	position: relative;
+	width: 30%;
+	left: 15%;
+	min-height: 150px;
+	text-align: right;
+	margin: 5.3rem 0px;
+
+}
+
+#timeline-box h3{
+	color: #352b94;
+	font-size: 1.8rem;
+	letter-spacing: 1.5px;
+	padding: 5px 3px 5px 0px; 
+
+}
+
+#timeline-box h4{
+	color: red;
+	font-size: 1.6rem;
+	letter-spacing: 1.5px;
+	padding: 5px 3px 5px 0px; 
+}
+
+
+#timeline-box p#content{
+	text-align: left;
+	padding: 5px 3px;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+}
+
+#timeline-box p#content:nth-child(2n+1){
+	text-align: right;
+	padding: 5px 3px;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+}
+
+#timeline-box:nth-child(2n)::before{
+	content: '';
+	position: absolute;
+	top: 20%;
+	left: -17.5%;
+	border-radius: 50%;
+	background-color: black;
+	height: 0.6rem;
+	width: 0.6rem;
+}
+
+#timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top: 20%;
+	right: -18.0%;
+	border-radius: 50%;
+	background-color: black;
+	height: 0.6rem;
+	width: 0.6rem;
+}
+
+
+#seperator{
+	position: absolute;
+	height: 85%;
+	top: 8%;
+	width: 0;
+	left: 50%;
+	border: none;
+	border-right: 2px dashed grey; 
+}
+
+#plane{
+	position:sticky;
+	top: 25%;
+	transform: rotate(90deg); /*This is used to 
+	rotate our image.*/
+	font-size: 1.6rem;
+}
+
+
+#Car{
+	position:sticky;
+	top: 25%;
+	transform: rotate(90deg); /*This is used to 
+	rotate our image.*/
+	font-size: 1.6rem;
+}
+
+			/*Portfolio*/
+
+
+#portfolio h2{
+
+	padding-bottom:100px;
+	font-family: sans-serif;
+	font-weight: 530;
+	font-size: 45px;
+	color: #352b94;
+
+}
+
+#portfolio-container{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2%;
+    justify-content: center;	
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 50px;
+    padding: 0 100px
+}
+
+
+
+/*--------------------------------------------*/
+
+#contact{
+    height:75vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #2857a4, #403066);
+}
+
+ #contact h2{
+    color: white;
+    font-size: 34px;
+    padding-bottom: 60px;
+    letter-spacing: 0.2em;
+}
+
+#main-div{
+    display:flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+
+#form{
+    width: 40%;
+    padding: 1rem;
+
+}
+
+#address{
+	margin-top: 40px;
+    padding: 1rem;
+    width: 40%;
+    line-height: 2.6em;
+
+}
+
+#address h3{
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    padding: 10px 0px;
+   
+}
+
+#address p{
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+    line-height: 2.2em;
+}
+
+form{
+    text-align: center;
+}
+
+form input,textarea{
+    outline:none;
+    /*display: inline-block;*/
+    margin: 20px;
+    padding: 5px 10px;
+    border: 0px solid transparent;
+    border-bottom: solid 2px white;
+    width: 80%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    min-height: 50px;
+    min-width: 300px;
+
+}
+
+button{
+   	
+    background: transparent;  	
+    height: 40px;
+    width: 160px;
+    color: white;
+    border: solid 2px white;
+    letter-spacing: 1px;
+/*     margin-left: 205px; */
+    margin-top: 20px;
+    
+}
+
+#social{
+    list-style: none;
+    
+}
+
+#social li, #social a{
+	color: white;
+    display: inline-block;
+    margin: 2rem 0.8rem;
+    font-size: 1.3rem;
+    padding: 10px;
+    
+}
+
+#social a:hover{
+    border: 1px white solid;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px;
+
+    
+}
